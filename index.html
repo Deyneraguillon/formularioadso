@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Formulario De Registro</title>
+      <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <form>
+            <div>
+                  <label for="nombre">Ingrese su nombre:</label><br>
+                  <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div>
+                  <label for="password">Ingrese su contraseña:</label><br>
+                  <input type="password" id="password" name="password" required>
+            </div>
+
+            <div>
+                  <label for="email">Escriba su email:</label><br>
+                  <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                  <label for="telefono">Ingrese su número de teléfono:</label><br>
+                  <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <fieldset>
+                  <legend>Género</legend>
+                  <label for="masculino">Masculino</label>
+                  <input type="radio" id="masculino" name="genero" value="masculino">
+                  <label for="femenino">Femenino</label>
+                  <input type="radio" id="femenino" name="genero" value="femenino">
+            </fieldset>
+
+            <fieldset>
+                  <legend>Estado Civil</legend>
+                  <label for="soltero">Soltero</label>
+                  <input type="radio" id="soltero" name="estado_civil" value="soltero">
+                  <label for="casado">Casado</label>
+                  <input type="radio" id="casado" name="estado_civil" value="casado">
+            </fieldset>
+
+            <div>
+                  <label label for="archivo">Subir Archivo:</label><br>
+                  <input type="file" id="archivo" name="archivo">
+            </div>
+
+            <div>
+                  <button type="submit">Enviar</button>
+            </div>
+      </form>
+</body>
+</html>
