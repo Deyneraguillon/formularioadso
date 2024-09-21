@@ -21,6 +21,34 @@ body {
                   background-position: 0% 50%;
             }
       }
+@media screen and (min-width: 600px ) and (max-width:1000px) {
+            #contenedor{
+                  background-color: rgb(132, 132, 253);
+                  display: grid; ;
+                  flex-direction: column;
+                  width: 80%;
+            }
+      }
+@media only screen and (max-width: 600px) {
+            body {
+                  font-family: 'Verdana', sans-serif;
+            }
+}
+@keyframes cambiarColor {
+      from {
+            background-color: rgb(192, 27, 27);
+      }
+      to {
+            background-color: rgb(41, 243, 51);
+      }
+      }
+
+@media only screen and (max-width: 600px) {
+      body {
+            animation: cambiarColor 1s ease-in-out;
+            font-family: 'Verdana', sans-serif;
+      }
+      }
 
 form {
       background-color: #fff;
@@ -85,6 +113,11 @@ button {
       cursor: pointer;
       transition: transform 0.3s ease; 
       }
+@media only screen and (min-width: 600px) {
+            button{
+                  background-color: rgb(180, 14, 158);
+                  }
+            }
 
 button:hover {
       transform: scale(1.1); 
